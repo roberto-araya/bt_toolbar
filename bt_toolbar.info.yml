@@ -1,0 +1,10 @@
+name: 'Btester Toolbar'
+description: 'Agrega el menú Btester al toolbar y cambia el estilo'
+type: module
+core: 8.x
+dependencies:
+  - system
+  - toolbar_themes
+  - toolbar_menu
+version: 8.x-1.0
+package: Btester
