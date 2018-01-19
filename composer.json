@@ -2,7 +2,9 @@
   "name": "drupal/bt_toolbar",
   "type": "drupal-module",
   "description": "",
-  "keywords": ["Drupal"],
+  "keywords": [
+    "Drupal"
+  ],
   "homepage": "https://www.drupal.org/project/bt_toolbar",
   "license": "GPL-2.0+",
   "authors": [

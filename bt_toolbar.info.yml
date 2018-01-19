@@ -1,10 +1,9 @@
 name: 'Btester Toolbar'
-description: 'Agrega el menú Btester al toolbar y cambia el estilo'
+description: 'This module changes the appearance of toolbar and adds the bt-menu-app to it.'
 type: module
 core: 8.x
 dependencies:
-  - system
-  - toolbar_themes
-  - toolbar_menu
-version: 8.x-1.0
+  - drupal:system
+  - toolbar_menu:toolbar_menu
+  - toolbar_themes:toolbar_themes
 package: Btester
