@@ -20,7 +20,7 @@
     "source": "http://git.drupal.org/project/bt_toolbar.git"
   },
   "require": {
-    "drupal/toolbar_menu": "1.x-dev",
+    "drupal/toolbar_menu": "2.x-dev",
     "drupal/toolbar_themes": "1.x-dev"
   }
 }
