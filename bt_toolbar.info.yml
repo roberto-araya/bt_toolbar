@@ -5,5 +5,4 @@ core: 8.x
 dependencies:
   - drupal:system
   - toolbar_menu:toolbar_menu
-  - toolbar_themes:toolbar_themes
 package: Btester
