@@ -16,13 +16,13 @@ function bt_toolbar_toolbar_alter(&$items) {
   //$user_id = $current_user->id();
   //$user_account = User::load($user_id);
 
-  if ($items['contextual']) {
+  if (array_key_exists('contextual', $items)) {
     unset($items['contextual']);
   }
-  if ($items['redhen']) {
+  if (array_key_exists('redhen', $items)) {
     unset($items['redhen']);
   }
-  if ($items['user']) {
+  if (array_key_exists('user', $items)) {
     unset($items['user']);
   }
 
