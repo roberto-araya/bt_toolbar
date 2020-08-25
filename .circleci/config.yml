@@ -52,24 +52,20 @@ jobs:
   # php 7.4. But we still want to provide the template for testing code with
   # legacy cores.
   # Also, enable in workflows below.
-  # build-php-7.4-legacy:
-  #   <<: *container_config
-  #   environment:
-  #     DRUPAL_VERSION: 8.7.6
-  #     # Drupal project commit before moving 8.8.0.
-  #     # https://github.com/drupal-composer/drupal-project/commit/53f6910c35db73d0b367d5b6f22be4af94dd1af3
-  #     DRUPAL_PROJECT_SHA: 53f6910c35db73d0b367d5b6f22be4af94dd1af3
-  #   <<: *job-build
+  build-php-7.4-legacy:
+     <<: *container_config
+     environment:
+      DRUPAL_VERSION: 8.8.0
+      DRUPAL_PROJECT_SHA: 04a3fe08d35bfdbdcb9718556fbe8181cd111ff0
+     <<: *job-build
 
   build-php-7.3-legacy:
     <<: *container_config
     docker:
       - image: circleci/php:7.3-cli-browsers
     environment:
-      DRUPAL_VERSION: 8.7.6
-      # Drupal project commit before moving 8.8.0.
-      # https://github.com/drupal-composer/drupal-project/commit/53f6910c35db73d0b367d5b6f22be4af94dd1af3
-      DRUPAL_PROJECT_SHA: 53f6910c35db73d0b367d5b6f22be4af94dd1af3
+      DRUPAL_VERSION: 8.8.0
+      DRUPAL_PROJECT_SHA: 04a3fe08d35bfdbdcb9718556fbe8181cd111ff0
     <<: *job-build
 
   build-php-7.2-legacy:
@@ -77,10 +73,8 @@ jobs:
     docker:
       - image: circleci/php:7.2-cli-browsers
     environment:
-      DRUPAL_VERSION: 8.7.6
-      # Drupal project commit before moving 8.8.0.
-      # https://github.com/drupal-composer/drupal-project/commit/53f6910c35db73d0b367d5b6f22be4af94dd1af3
-      DRUPAL_PROJECT_SHA: 53f6910c35db73d0b367d5b6f22be4af94dd1af3
+      DRUPAL_VERSION: 8.8.0
+      DRUPAL_PROJECT_SHA: 04a3fe08d35bfdbdcb9718556fbe8181cd111ff0
     <<: *job-build
 
   deploy:
