@@ -3,7 +3,7 @@ version: 2
 aliases:
   # SSH deployment key fingerprint from CircleCI App -> Project -> Settings -> SSH Permissions.
   # Replace the value for your project.
-  - &deploy_ssh_fingerprint "9b:a7:9d:af:4b:79:a7:56:d5:d0:9d:43:25:b1:86:06"
+  - &deploy_ssh_fingerprint "d1:d2:3b:87:e8:6c:c1:7c:d2:d7:65:43:30:7b:e6:6b"
   - &container_config
     working_directory: ~/project
     docker:
