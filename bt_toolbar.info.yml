@@ -1,7 +1,7 @@
 name: 'Btester Toolbar'
 description: 'This module changes the appearance of toolbar and adds the bt-menu-app to it.'
 type: module
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ~9.4.0
 dependencies:
   - drupal:system
   - toolbar_menu:toolbar_menu
